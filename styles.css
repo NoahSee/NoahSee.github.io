@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+svg {
+  padding: 100px;
+}
+
+polyline {
+  stroke: black;
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: "round";
+  stroke-dasharray: 0 10000;
+  stroke-dashoffset: 0;
+}

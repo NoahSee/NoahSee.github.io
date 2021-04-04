@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="styles.css">
+<body>
+  <svg width="600" height="280" viewbox="0 -50 1500 650">
+    <polyline
+      id="first"
+      points="0,400 100,400 200,200 200,0 100,200"
+    />
+    <animate 
+      d="first-anim"
+      xlink:href="#first"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="0s"
+    />
+    <polyline
+      id="second"
+      points="300,0 400,0 100,600 200,600 425,150 725,150 600,400 700,400 825,150 1025,150 1050,100 950,100"
+    />
+    <animate
+      d="second-anim"
+      xlink:href="#second"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="0.4s"
+    />
+    <polyline
+      id="third"
+      points="500,400 400,400 500,200 600,200 525,350"
+    />
+    <animate
+      d="third-anim"
+      xlink:href="#third"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="1.4s"
+    />
+    <polyline
+      id="fourth"
+      points="900,400 800,400 900,200 1000,200 925,350"
+    />
+    <animate
+      d="fourth-anim"
+      xlink:href="#fourth"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="1.8s"
+    />
+    <polyline
+      id="fifth"
+      points="900,600 1200,0 1300,0 1000,600"
+    />
+    <animate
+      d="fifth-anim"
+      xlink:href="#fifth"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="2.2s"
+    />
+    <polyline
+      id="sixth"
+      points="1500,400 1200,400 1325,150 1425,150 1325,350 1500,350"
+    />
+    <animate
+      d="sixth-anim"
+      xlink:href="#sixth"
+      attributeName="stroke-dasharray"
+      from="0 10000"
+      to="10000 10000" 
+      dur="3s"
+      fill="freeze"
+      begin="2.8s"
+    />
+  </svg>
+</body>
+</html>
