@@ -1,10 +1,10 @@
 <html>
 <link rel="stylesheet" href="styles.css">
 <body>
-  <svg width="600" height="280" viewbox="0 -50 1500 650">
+  <svg width="600" height="200" viewbox="0 -50 1500 450">
     <polyline
       id="first"
-      points="0,400 100,400 200,200 200,0 100,200"
+      points="100,200 200,0 200,200 100,400 0,400"
     />
     <animate 
       d="first-anim"
@@ -12,13 +12,13 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="0s"
+      begin="0.5s"
     />
     <polyline
       id="second"
-      points="300,0 400,0 100,600 200,600 425,150 725,150 600,400 700,400 825,150 1025,150 1050,100 950,100"
+      points="300,0 400,0 200,400 300,400 425,150 725,150 600,400 700,400 825,150 1025,150 1050,100 950,100"
     />
     <animate
       d="second-anim"
@@ -26,9 +26,9 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="0.4s"
+      begin="1s"
     />
     <polyline
       id="third"
@@ -40,9 +40,9 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="1.4s"
+      begin="1.5s"
     />
     <polyline
       id="fourth"
@@ -54,13 +54,13 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="1.8s"
+      begin="2s"
     />
     <polyline
       id="fifth"
-      points="900,600 1200,0 1300,0 1000,600"
+      points="1000,400 1200,0 1300,0 1100,400"
     />
     <animate
       d="fifth-anim"
@@ -68,9 +68,9 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="2.2s"
+      begin="2.5s"
     />
     <polyline
       id="sixth"
@@ -82,9 +82,9 @@
       attributeName="stroke-dasharray"
       from="0 10000"
       to="10000 10000" 
-      dur="3s"
+      dur="2s"
       fill="freeze"
-      begin="2.8s"
+      begin="3s"
     />
   </svg>
 </body>
