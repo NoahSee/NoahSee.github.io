@@ -1,16 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
+  background: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
 svg {
   padding: 100px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
 }
 
 polyline {
-  stroke: black;
-  stroke-width: 3;
+  stroke-width: 4;
   fill: none;
-  stroke-linecap: "round";
-  stroke-dasharray: 0 10000;
-  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-width 0.3s ease;
+}
+
+#first {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+
+#second {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+}
+
+#third {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+#fourth {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+#fifth {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+
+#sixth {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+
+@keyframes draw1 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw2 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw3 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw4 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw5 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw6 {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes undraw1 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -2000; }
+}
+
+@keyframes undraw2 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -3000; }
+}
+
+@keyframes undraw3 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -1500; }
+}
+
+@keyframes undraw4 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -1500; }
+}
+
+@keyframes undraw5 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -2000; }
+}
+
+@keyframes undraw6 {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -1500; }
+}
+
+polyline:hover {
+  stroke-width: 5;
 }
