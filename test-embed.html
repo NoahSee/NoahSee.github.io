@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Logo Embed Test</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        /* Example of easy import style: Fixed bottom right */
+        noah-logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            /* No z-index or other complex stuff needed unless interfering */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Other Project Test</h1>
+    <p>This page simulates another project where the logo is imported.</p>
+
+    <!-- The Component -->
+    <noah-logo></noah-logo>
+    <script src="noah-logo.js"></script>
+</body>
+
+</html>
